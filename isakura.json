@@ -1,123 +1,20 @@
-@-moz-document url-prefix("http://webtv.jptvpro.net") {
-body, html {
-    height: 100%;
-    width: 100%;
-}
-.tvplayer {
-    width: 100vw;
-    height: 100vh;
-    border: 0px;
-}
-.tv_main {
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background: black;
-    overflow: hidden;
-}
-.tv_right {
-    width: calc( 100vw - 70px);
-    left: 70px;
-    z-index: 1;
-    top: 45px;
-    height: calc( 100vh - 45px);
-}
-.tv_userinfo,
-.tv_userinfo_detail {
-    font-size: 12px;
-    line-height: normal;
-    background-size: contain;
-    height: 17px;
-}
-.tv_left {
-    top: 0;
-    height: 100%;
-    width: 70px;
-    z-index: 2;
-    background: rgba(0, 0, 0, .80);
-    left: 0;
-}
-.tv_left:hover {
-    width: auto;
-}
-.tv_left .tv_items_container {
-    opacity: 0;
-}
-.tv_left:hover .tv_items_container {
-    opacity: 1;
-}
-.tv_epg_item:hover,
-.tv_channel_item:hover,
-.tv_nav_item:hover {
-    background: #ac1010;
-}
-.tv_channels_items_wrapper {
-    width: 100%;
-    height: calc( 100vh - 77px);
-    font-size: 22px;
-}
-.tv_video {
-    width: calc(100vw - 70px - 285px);
-    border: none;    
-    height: calc( 100vh - 100px);
-    z-index: 1;
-}
-.tv_ts_info {
-    margin: 0;
-}
-.tv_video_info  {
-    z-index: 1;
-}
-.tv_ts_info_main {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    right: 0;
-    height: 50px;
-    overflow: hidden;
-    z-index: 3000;
-    border-top: 1px solid #bf0808;
-    background: rgba(0, 0, 0, .73);    
-}
-.tv_ts_info_main * {
-    pointer-events:none;    
-}
-.tv_ts_info_main:hover {
-    height: auto;    
-    overflow: visible;    
-}
-.tv_ts_info_main:hover * {    
-    pointer-events: auto;
-}
-
-@media only screen and (max-width: 1024px) {
-    .tv_info {
-        top: -45px;
-        position: absolute;
-        z-index: 1002;
-        height: 40px;
-        overflow: hidden;
-        background: rgba(0, 0, 0, .73);
-    }
-    .tv_info:hover {
-        height: auto;
-    }
-    .tv_video {
-        width: calc(100vw - 80px);        
-    }
-    .tv_epg_item .epg_time {
-        width: 10vw;
-    }
-    .tv_epg_item .epg_title {
-        width: 60vw;
-    }
-    .tv_ts_info_header .header_item {
-        width: 11vw;
-    }
-    .tv_ts_info_header .header_item,
-    .tv_ts_info_header .header_text .day {
-        font-size: 12px;
-    }
-}
-
-}
+[
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1544485955946,
+		"name": "webtv.jptvpro.net",
+		"sections": [
+			{
+				"code": "body, html {\n    height: 100%;\n    width: 100%;\n}\n.tvplayer {\n    width: 100vw;\n    height: 100vh;\n    border: 0px;\n}\n.tv_main {\n    width: 100vw;\n    height: 100vh;\n    background-size: cover;\n    background: black;\n    overflow: hidden;\n}\n.tv_right {\n    width: calc( 100vw - 70px);\n    left: 70px;\n    z-index: 1;\n    top: 45px;\n    height: calc( 100vh - 45px);\n}\n.tv_userinfo,\n.tv_userinfo_detail {\n    font-size: 12px;\n    line-height: normal;\n    background-size: contain;\n    height: 17px;\n}\n.tv_left {\n    top: 0;\n    height: 100%;\n    width: 70px;\n    z-index: 2;\n    background: rgba(0, 0, 0, .80);\n    left: 0;\n}\n.tv_left:hover {\n    width: auto;\n}\n.tv_left .tv_items_container {\n    opacity: 0;\n}\n.tv_left:hover .tv_items_container {\n    opacity: 1;\n}\n.tv_epg_item:hover,\n.tv_channel_item:hover,\n.tv_nav_item:hover {\n    background: #ac1010;\n}\n.tv_channels_items_wrapper {\n    width: 100%;\n    height: calc( 100vh - 77px);\n    font-size: 22px;\n}\n.tv_video {\n    width: calc(100vw - 70px - 285px);\n    border: none;    \n    height: calc( 100vh - 100px);\n    z-index: 1;\n}\n.tv_ts_info {\n    margin: 0;\n}\n.tv_video_info  {\n    z-index: 1;\n}\n.tv_ts_info_main {\n    position: absolute;\n    left: 0px;\n    bottom: 0px;\n    right: 0;\n    height: 50px;\n    overflow: hidden;\n    z-index: 3000;\n    border-top: 1px solid #bf0808;\n    background: rgba(0, 0, 0, .73);    \n}\n.tv_ts_info_main * {\n    pointer-events:none;    \n}\n.tv_ts_info_main:hover {\n    height: auto;    \n    overflow: visible;    \n}\n.tv_ts_info_main:hover * {    \n    pointer-events: auto;\n}\n\n@media only screen and (max-width: 1024px) {\n    .tv_info {\n        top: -45px;\n        position: absolute;\n        z-index: 1002;\n        height: 40px;\n        overflow: hidden;\n        background: rgba(0, 0, 0, .73);\n    }\n    .tv_info:hover {\n        height: auto;\n    }\n    .tv_video {\n        width: calc(100vw - 80px);        \n    }\n    .tv_epg_item .epg_time {\n        width: 10vw;\n    }\n    .tv_epg_item .epg_title {\n        width: 60vw;\n    }\n    .tv_ts_info_header .header_item {\n        width: 11vw;\n    }\n    .tv_ts_info_header .header_item,\n    .tv_ts_info_header .header_text .day {\n        font-size: 12px;\n    }\n}",
+				"urlPrefixes": [
+					"http://webtv.jptvpro.net"
+				]
+			}
+		],
+		"id": 1
+	}
+]
