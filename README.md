@@ -1,7 +1,7 @@
 # webtv
 Make it better
 
-theme for stylish 
+theme for Stylus 
 
 Chrome https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en
 
