@@ -9,6 +9,10 @@ FF https://addons.mozilla.org/en-US/firefox/addon/styl-us/
 
 ```
 @-moz-document url-prefix("http://webtv.jptvpro.net") {
+body, html {
+    height: 100%;
+    width: 100%;
+}
 .tvplayer {
     width: 100vw;
     height: 100vh;
@@ -19,6 +23,7 @@ FF https://addons.mozilla.org/en-US/firefox/addon/styl-us/
     height: 100vh;
     background-size: cover;
     background: black;
+    overflow: hidden;
 }
 .tv_right {
     width: calc( 100vw - 70px);
@@ -74,23 +79,30 @@ FF https://addons.mozilla.org/en-US/firefox/addon/styl-us/
     z-index: 1;
 }
 .tv_ts_info_main {
-position: absolute;
-    left: 0;
-    bottom: 0;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
     right: 0;
     height: 50px;
     overflow: hidden;
     z-index: 3000;
     border-top: 1px solid #bf0808;
-    background: rgba(0, 0, 0, .73);
+    background: rgba(0, 0, 0, .73);    
+}
+.tv_ts_info_main * {
+    pointer-events:none;    
 }
 .tv_ts_info_main:hover {
     height: auto;    
-    overflow: visible;
+    overflow: visible;    
 }
+.tv_ts_info_main:hover * {    
+    pointer-events: auto;
+}
+
 @media only screen and (max-width: 1024px) {
     .tv_info {
-        top: -37px;
+        top: -45px;
         position: absolute;
         z-index: 1002;
         height: 40px;
