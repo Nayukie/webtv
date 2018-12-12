@@ -8,6 +8,7 @@ Chrome https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfoba
 FF https://addons.mozilla.org/en-US/firefox/addon/styl-us/
 
 ```
+@-moz-document url-prefix("http://webtv.jptvpro.net") {
 body, html {
     height: 100%;
     width: 100%;
@@ -130,6 +131,8 @@ body, html {
     .tv_ts_info_header .header_text .day {
         font-size: 12px;
     }
+}
+
 }
 
 ```
