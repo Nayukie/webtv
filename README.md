@@ -3,6 +3,8 @@ Make it better
 
 theme for Stylus 
 
+![Preview](https://github.com/marslane/webtv/raw/master/isakura.gif)
+
 Chrome https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en
 
 FF https://addons.mozilla.org/en-US/firefox/addon/styl-us/
